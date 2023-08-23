@@ -11,6 +11,7 @@
         </div>
         <div class="card-footer">
             {{post.created_at}}
+            <a href="{% url 'posts:delete' id=post.id %}" class="btn btn-warning">delete</a>
         </div>
     </div>
     
